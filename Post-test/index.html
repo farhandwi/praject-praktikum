@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .emailPass li {
+        list-style: none;
+      }
+      .pesan li {
+        list-style: none;
+      }
+      .emailPass {
+        margin-left: -20px;
+      }
+      .pesan {
+        margin-left: -20px;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- awal navbar -->
+    <nav>
+      <div>
+        <h1>Praktikum Web</h1>
+      </div>
+      <ul>
+        <li>About</li>
+        <li>Skill</li>
+        <li>Project</li>
+        <li>Contact</li>
+      </ul>
+    </nav>
+    <!-- akhir navbar -->
+    <!-- awal hero section -->
+    <div>
+      <img src="fotoguwe.JPG" style="display: flex; width: 30%; height: auto; padding-bottom: 10px" alt="" />
+      <caption>
+        Saya adalah seorang yang tekun dan gigih dalam menjalani tugas dan kewajibannya tanpa kenal lelah
+      </caption>
+    </div>
+    <!-- akhir hero section -->
+
+    <div class="pesan">
+      <form action="" method="post">
+        <ul>
+          <li>
+            <label for="username">Email :</label>
+            <input type="text" name="username" id="username" />
+          </li>
+          <li>
+            <label for="password">Pesan anda untuk saya :</label>
+            <input type="password" name="password" id="password" />
+          </li>
+          <li>
+            <button type="submit" name="pesan">Submit</button>
+          </li>
+        </ul>
+      </form>
+    </div>
+
+    <h1>Rating kebaikan saya :</h1>
+    <form>
+      <label> <input type="radio" name="jenis-kelamin" value="pria" /> Baik Sekali </label>
+      <label> <input type="radio" name="jenis-kelamin" value="wanita" /> Sekali Baik </label>
+      <label> <input type="radio" name="jenis-kelamin" value="lainnya" /> Baik Saja </label>
+      <label> <input type="radio" name="jenis-kelamin" value="pria" /> Sekali jahat </label>
+      <label> <input type="radio" name="jenis-kelamin" value="wanita" /> Jahat Sekali </label>
+    </form>
+    <form action="">
+      <button type="submit" name="rating">Submit</button>
+    </form>
+    <br />
+    <h3>Sumbang Akun Mobile Legend Kalian</h3>
+
+    <div class="emailPass">
+      <form action="" method="post">
+        <ul>
+          <li>
+            <label for="username">Username :</label>
+            <input type="text" name="username" id="username" />
+          </li>
+          <li>
+            <label for="password">Password :</label>
+            <input type="password" name="password" id="password" />
+          </li>
+          <li>
+            <input type="checkbox" name="remember" id="remember" />
+            <label for="remember">Remember me</label>
+          </li>
+          <li>
+            <button type="submit" name="login">Sumbang</button>
+          </li>
+        </ul>
+      </form>
+    </div>
+  </body>
+</html>
