@@ -25,6 +25,7 @@ function eventClick() {
     } else {
       console.log("huhu");
       totalDiskon.innerHTML = diskon;
+      totalHarga.innerHTML = tempTotal - diskon;
     }
   } else {
     jumlahMakanan.innerHTML = 0;
