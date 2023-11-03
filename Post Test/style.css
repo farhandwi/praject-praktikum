@@ -1,0 +1,111 @@
+/* Reset some default styles */
+body, ul {
+    margin: 0;
+    padding: 0;
+}
+
+.navbar {
+    background-color: lightblue;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px;
+}
+
+.logo img {
+    width: 200px;
+    height: auto;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+}
+
+.nav-links li {
+    margin-right: 20px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: gray;
+    font-weight: bold;
+}
+
+.container{
+    width: 100%;
+    grid-template-areas:
+    'header header'
+    'aside main'
+    'aside main'
+    'footer footer';
+    display: grid;
+    grid-template-columns: 2fr 4fr;
+    grid-template-rows: 2fr 5fr 2fr;
+}
+
+header{
+    padding: 0px;
+    margin: 0px;
+    text-align: center;
+    justify-content: center;
+    grid-area: header;
+}
+
+aside{
+    text-align: center;
+    justify-content: center;
+    grid-area: aside;
+}
+
+main{
+    text-align: center;
+    justify-content: center;
+    padding: 4%;
+    grid-area: main;
+}
+
+footer{
+    text-align: center;
+    justify-content: center;
+    padding-top: 5%;
+    grid-area: footer;
+}
+
+main h2{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+main p{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.skills {
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+.skill {
+    margin-bottom: 10px;
+}
+
+.skill-name {
+    font-weight: bold;
+}
+
+.skill-bar {
+    background-color: #ddd;
+    height: 20px;
+    border-radius: 5px;
+    margin-top: 5px;
+    position: relative;
+}
+
+.skill-level {
+    background-color: #4CAF50;
+    height: 100%;
+    border-radius: 5px;
+    text-align: center;
+    color: #fff;
+    line-height: 20px;
+}
