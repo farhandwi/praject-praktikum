@@ -1,0 +1,197 @@
+/* Reset some default styles */
+body,
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+.navbar {
+  background-color: lightblue;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 20px;
+}
+
+.logo img {
+  width: 200px;
+  height: auto;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+}
+
+.nav-links li {
+  margin-right: 20px;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: gray;
+  font-weight: bold;
+}
+
+.container {
+  width: 100%;
+  grid-template-areas:
+    "header header"
+    "aside main"
+    "aside main"
+    "containerLain containerLain"
+    "hasil hasil"
+    "footer footer";
+  display: grid;
+  grid-template-columns: 2fr 4fr;
+  grid-template-rows: 0.4fr 0.7fr 0.7fr 0.3fr 1fr 0.2fr;
+}
+
+header {
+  padding: 0px;
+  margin: 0px;
+  text-align: center;
+  justify-content: center;
+  grid-area: header;
+}
+
+aside {
+  text-align: center;
+  justify-content: center;
+  grid-area: aside;
+}
+
+main {
+  text-align: center;
+  justify-content: center;
+  padding: 4%;
+  grid-area: main;
+}
+
+footer {
+  text-align: center;
+  justify-content: center;
+  padding-top: 5%;
+  grid-area: footer;
+}
+
+main h2 {
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+
+main p {
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+
+.skills {
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+.skill {
+  margin-bottom: 10px;
+}
+
+.skill-name {
+  font-weight: bold;
+}
+
+.skill-bar {
+  background-color: #ddd;
+  height: 20px;
+  border-radius: 5px;
+  margin-top: 5px;
+  position: relative;
+}
+
+.skill-level {
+  background-color: #4caf50;
+  height: 100%;
+  border-radius: 5px;
+  text-align: center;
+  color: #fff;
+  line-height: 20px;
+}
+
+.containerLain {
+  grid-area: containerLain;
+  width: 100%;
+  height: auto;
+  grid-template-areas: "formKiri formKanan";
+  display: grid;
+  grid-template-columns: 0.3fr 0.2fr;
+  grid-template-rows: 2.5fr;
+  justify-content: center;
+  align-items: center;
+  margin: 0% auto;
+}
+
+.formKiri {
+  grid-area: formKiri;
+  width: 100%;
+  height: 100%;
+}
+
+.formKiri table {
+  grid-area: formKiri;
+  width: 100%;
+  height: 100%;
+  padding: 20px;
+  background-color: pink;
+  border-style: double;
+  border-radius: 30px;
+}
+
+.formKanan {
+  padding: 10px;
+  grid-area: formKanan;
+  width: 100%;
+  height: 100%;
+  margin-left: 40px;
+}
+
+.container2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0% auto;
+  width: 100%;
+  height: 100%;
+  border-radius: 40px;
+  border-style: dashed;
+  background-color: tomato;
+}
+
+.submit {
+  border-radius: 30px;
+  width: 50%;
+  height: 40%;
+  background-color: yellow;
+  cursor: pointer;
+}
+
+.submit p {
+  text-align: center;
+  font-size: medium;
+  justify-content: center;
+  font-weight: bolder;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+
+.hasil {
+  grid-area: hasil;
+  width: 50%;
+  height: auto;
+  justify-content: center;
+  align-items: center;
+  margin: 5% auto;
+  padding: 20px;
+  border-radius: 40px;
+  border-style: dashed;
+  border-width: 10px;
+  background-color: coral;
+}
+
+.text {
+  display: inline-block;
+}
