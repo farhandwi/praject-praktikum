@@ -1,0 +1,54 @@
+html body {
+  background-color: lightblue;
+  font-family: "Permanent Marker", cursive;
+}
+
+.winning-message {
+  align-items: center;
+  text-align: center;
+}
+
+.Creset {
+  text-align: center;
+}
+
+h1 {
+  color: black;
+}
+
+.board .cell {
+  width: 50px;
+  height: 50px;
+  background: white;
+  border-radius: 10px;
+  border-style: solid;
+  border-color: black;
+  align-items: center;
+  text-align: center;
+  margin: 5px auto;
+  line-height: 50px;
+  cursor: pointer;
+  font-size: 30px;
+  color: blueviolet;
+}
+
+.board {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  margin: 10px auto;
+  width: 200px;
+  align-items: center;
+  text-align: center;
+  height: auto;
+}
+
+.dark-mode {
+  background-color: black;
+  color: white;
+}
+
+.statusText {
+  text-align: center;
+  font-size: larger;
+  margin: 10px auto;
+}
