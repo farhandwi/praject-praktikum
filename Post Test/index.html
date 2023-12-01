@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Post Test 9</title>
+  </head>
+  <body>
+    <h1>Form Input Nilai Mata Kuliah</h1>
+    <div id="nilaiMhs">
+      <form action="hitung.php" method="post">
+        <div id="tambahNilai">
+          <label for="nilai">Nilai Mata Kuliah 1: </label>
+          <input type="text" id="nilai" placeholder="Nilai Mata Kuliah 1" name="nilai[]" />
+        </div>
+        <button style="margin-top: 10px; margin-bottom: 10px" type="button" id="submit">Tambah Mata Kuliah</button><br />
+        <button type="submit" id="hitung">Hitung IPK</button>
+      </form>
+    </div>
+
+    <script>
+      const nilaiMhs = document.getElementById("nilaiMhs");
+      const tambahText = document.getElementById("tambahNilai");
+      let mataKuliah = 2;
+      document.getElementById("submit").addEventListener("click", function () {
+        let newLabel = document.createElement("label");
+        let newInput = document.createElement("input");
+        let newDiv = document.createElement("div");
+        let textLabel = document.createTextNode("Nilai Mata Kuliah " + mataKuliah + ": ");
+        newInput.setAttribute("type", "text");
+        newInput.setAttribute("id", "nilai");
+        newInput.setAttribute("placeholder", `Nilai Mata Kuliah ${mataKuliah}`);
+        newInput.setAttribute("name", "nilai[]");
+        newLabel.setAttribute("for", "nilai");
+        newLabel.appendChild(textLabel);
+        newDiv.setAttribute("id", "tambahNilai");
+        newDiv.appendChild(newLabel);
+        newDiv.appendChild(newInput);
+        tambahText.appendChild(newDiv);
+        mataKuliah++;
+      });
+    </script>
+  </body>
+</html>
