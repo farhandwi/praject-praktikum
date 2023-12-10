@@ -16,7 +16,7 @@ if (isset($_POST['submit'])) {
 	if ($result->num_rows > 0) {
 		$row = mysqli_fetch_assoc($result);
 		$_SESSION['username'] = $row['username'];
-		header("Location: welcome.php");
+		header("Location: index.php");
 	} else {
 		echo "<script>alert('Woops! Email Atau Password anda Salah.')</script>";
 	}
@@ -40,7 +40,7 @@ if (isset($_POST['submit'])) {
 <body>
 	<div class="navb">
 		<nav class="navbar navbar-expand-lg navbar-light bg-light">
-		<a class="navbar-brand" href="./index.html">Ann Film</a>
+		<a class="navbar-brand" href="./index.php">Ann Film</a>
 		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
 			<span class="navbar-toggler-icon"></span>
 		</button>

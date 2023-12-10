@@ -1,3 +1,5 @@
+<?php session_start(); ?>
+
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -26,9 +28,15 @@
           </li>
         </ul>
         <ul class="navbar-nav" style="margin: 0px; width: 10%">
-          <li class="nav-item">
-            <a class="btn btn-primary" href="login.php">Login</a>
-          </li>
+          <?php if(isset($_SESSION['username'])): ?>
+            <li class="nav-item">
+                <a class="btn btn-primary" href="logout.php">Logout</a>
+              </li>
+              <?php else: ?>
+                <li class="nav-item">
+                  <a class="btn btn-primary" href="login.php">Login</a>
+                </li>
+          <?php endif;?>
         </ul>
       </div>
     </nav>
