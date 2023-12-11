@@ -1,0 +1,118 @@
+body {
+  font-family: "Roboto";
+  margin: 0px;
+  height: 1000px;
+}
+
+.innerright,
+label {
+  color: rgb(16, 170, 16);
+  font-weight: bold;
+}
+.container,
+.row,
+.imglogo {
+  margin: auto;
+}
+
+table {
+  width: 100%;
+  padding: 10%;
+  margin-top: 10px;
+  border-style: solid;
+  border-color: black;
+}
+
+.innerdiv {
+  text-align: center;
+}
+input {
+  margin-left: 20px;
+}
+.leftinnerdiv {
+  float: left;
+  width: 25%;
+}
+
+.rightinnerdiv {
+  float: right;
+  width: 75%;
+}
+
+.innerright {
+  background-color: #fff;
+}
+
+.greenbtn {
+  background-color: #fff;
+  color: black;
+  width: 95%;
+  height: 40px;
+  margin-top: 8px;
+}
+
+.greenbtn,
+a {
+  text-decoration: none;
+  color: black;
+  font-size: large;
+}
+
+th {
+  background-color: rgb(99, 99, 252);
+  color: black;
+}
+td {
+  background-color: rgb(211, 211, 250);
+  color: black;
+}
+td,
+a {
+  color: black;
+}
+
+label {
+  margin-left: 50px;
+  padding-top: 10px;
+  font-size: 18px;
+  color: rgb(51, 51, 51);
+}
+
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="number"]:focus,
+input[type="pasword"]:focus,
+input[type="file"]:focus,
+select:focus,
+textarea:focus {
+  outline: none;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="number"],
+input[type="pasword"],
+input[type="file"],
+select,
+textarea {
+  width: 50%;
+  padding: 2px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  box-sizing: border-box;
+  margin-top: 2px;
+  margin-bottom: 2px;
+  resize: vertical;
+}
+
+::placeholder {
+  color: rgb(189, 184, 184);
+  font-style: italic;
+  font-size: 14px;
+}
