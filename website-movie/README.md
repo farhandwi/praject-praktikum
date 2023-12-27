@@ -1,4 +1,4 @@
-## Get Started
+## Cara Penginstalan
 
 - composer install
 - php artisan key:generate
@@ -6,13 +6,10 @@
 - php artisan migrate --seed
 - npm install
 
-## Features
+## Cara Menjalankan
 
-- Photo Upload
-- Photo Delete
-- Search
-- Filter by category
-- Optimize for all screen sizes.
+- buka terminal baru, kemudian ketikkan php artisan serve
+- buka terminal baru lagi, kemduian ketikkan 'npm run dev'
 
 <p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
 
